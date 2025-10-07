@@ -1,16 +1,3 @@
-"""
-Name: Kendra B.
-Problem: The purpose of this project is to create a Target Heart-Rate Calculator that
-         allows an individual to track their health and fitness level up to age 135. The program will prompt
-         the user to input their age in years by calculating their maximum heart rate.
-Date: 08/24/2025
-Version: 1.0
-
-"""
-# -------------------------------------------------------------------------------
-# Input Section Functionality
-# -------------------------------------------------------------------------------
-# Ask the user for their age and validate input
 while True:
     try:
         age = int(input("Please enter your age in years: "))
@@ -21,25 +8,13 @@ while True:
     except ValueError:
         print("Invalid input. Please enter a whole number.")
 
-# -------------------------------------------------------------------------------
-# Processing Section Functionality
-# -------------------------------------------------------------------------------
-# Calculation of maximum heart rate using the American Heart Association formula
 max_heart_rate = 220 - age
 
-# Calculate target range for moderate-intensity activities (50% to 70% of max heart rate)
 moderate_intensity_min = max_heart_rate * 0.50
 moderate_intensity_max = max_heart_rate * 0.70
 
-# Calculate target range for vigorous physical activity (70% to 85% of max heart rate)
 vigorous_activity_min = max_heart_rate * 0.70
 vigorous_activity_max = max_heart_rate * 0.85
-
-# -------------------------------------------------------------------------------
-# Output Section Functionality
-# -------------------------------------------------------------------------------
-# Display results showing age, maximum heart rate, and target ranges for
-# both moderate-intensity and vigorous activity
 
 print("-----Target Heart-Rate Calculator Based On Your Age-----")
 print(f"Your Age = {age} years,")
